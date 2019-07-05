@@ -37,10 +37,10 @@
                         let btnLeft = document.getElementById('btnLeft');
                         let btnRight = document.getElementById('btnRight');
 
-                        btnUp.addEventListener('touchstart', () => { mBot.processMotor(-250, 250) });
-                        btnDown.addEventListener('touchstart', () => { mBot.processMotor(250, -250) });
-                        btnLeft.addEventListener('touchstart', () => { mBot.processMotor(250, 250) });
-                        btnRight.addEventListener('touchstart', () => { mBot.processMotor(-250, -250) });
+                        btnUp.addEventListener('touchstart', () => { mBot.processMotor(-125, 125) });
+                        btnDown.addEventListener('touchstart', () => { mBot.processMotor(125, -125) });
+                        btnLeft.addEventListener('touchstart', () => { mBot.processMotor(125, 125) });
+                        btnRight.addEventListener('touchstart', () => { mBot.processMotor(-125, -125) });
 
                         btnUp.addEventListener('touchend', () => { mBot.processMotor(0, 0) });
                         btnDown.addEventListener('touchend', () => { mBot.processMotor(0, 0) });
