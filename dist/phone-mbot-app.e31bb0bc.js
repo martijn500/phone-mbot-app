@@ -445,16 +445,16 @@ module.exports = mBot;
           var btnLeft = document.getElementById('btnLeft');
           var btnRight = document.getElementById('btnRight');
           btnUp.addEventListener('touchstart', function () {
-            mBot.processMotor(-250, 250);
+            mBot.processMotor(-125, 125);
           });
           btnDown.addEventListener('touchstart', function () {
-            mBot.processMotor(250, -250);
+            mBot.processMotor(125, -125);
           });
           btnLeft.addEventListener('touchstart', function () {
-            mBot.processMotor(250, 250);
+            mBot.processMotor(125, 125);
           });
           btnRight.addEventListener('touchstart', function () {
-            mBot.processMotor(-250, -250);
+            mBot.processMotor(-125, -125);
           });
           btnUp.addEventListener('touchend', function () {
             mBot.processMotor(0, 0);
@@ -503,7 +503,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63231" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41315" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
