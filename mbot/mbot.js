@@ -53,6 +53,7 @@ class MBot {
             }],
             "optionalServices": [this.config.service()]
         };
+
         return navigator.bluetooth.requestDevice(options)
             .then(device => {
                 this.device = device;

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel index.html"
   },
-  "author": "",
+  "author": "Martijn van der Wijst",
   "license": "MIT",
   "devDependencies": {
     "parcel-bundler": "^1.12.3"
